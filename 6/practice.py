@@ -33,7 +33,6 @@ print(max_min_marks(group_dict))
 #     'mod': lambda x, y: x%y
 # }
 # print(calculator['minus'](9,3))
-'''
 
 
 verh_odezhda = {
@@ -84,19 +83,16 @@ verh_odezhda = {
 	}
 }
 
+
+
 def find_c_size(inter_size, country_name):
 	# verh_odezhda
-	for key, value in verh_odezhda.items():
-		for k, v in value.items():
-			if  k==country_name and v==inter_size:
-				break
-			# if v==inter_size:
-			# 	break
-		return v, k
-			# if inter_size == v:
-			# 	return v
-			# print(v)
+	for  key,value in verh_odezhda.items():
+		if key == inter_size:
+			# return value
+			for k, v in (value.items()):
+				if k == country_name:
+					# print(v)
+					return v
 
-print(find_c_size("m", "Russia"))
-# print(find_c_size(verh_odezhda))
-# print(verh_odezhda['m']['Russia'])
+print(find_c_size("xl", "Italy"))
