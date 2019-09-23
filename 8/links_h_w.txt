@@ -1,0 +1,3 @@
+https://github.com/anmalight/ все дз на гитхабе
+https://bitbucket.org/Anmalight/ на битбакет с другого компьютера
+https://github.com/anmalight/html5-test-page чужой проект c гитхаба
