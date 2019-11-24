@@ -18,7 +18,7 @@ class Profiler(object):
 
     def __exit__(self, *args):
         duration = (time.time() - self.start)
-        message = f"{self.name} : {duration} : {round(time.time())}"
+        message = f"{self.name} : {duration}"
         print(message)
 
 
@@ -29,7 +29,7 @@ def func_11(arg):
 with Profiler(func_11(12)):
     pass
 
-
+'''
 # 2
 class ReadCSV:
 
@@ -41,3 +41,4 @@ class ReadCSV:
 
 d = ReadCSV()
 d.read_str_by_str('convertcsv.csv')
+'''
