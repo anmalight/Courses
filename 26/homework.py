@@ -29,7 +29,7 @@ def func_11(arg):
 with Profiler(func_11(12)):
     pass
 
-'''
+
 # 2
 class ReadCSV:
 
@@ -41,4 +41,3 @@ class ReadCSV:
 
 d = ReadCSV()
 d.read_str_by_str('convertcsv.csv')
-'''
