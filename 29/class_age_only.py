@@ -23,7 +23,16 @@ class HumanAge:
               ((self.date_now.month, self.date_now.day) < (self.date_of_birth.month, self.date_of_birth.day))
         return f"{age} year(s)"
 
-# intercalary year
+    @property
+    def intercal_years(self):
+        number_of_years = 0
+        for year in range(self.date_of_birth.year, self.date_now.year):
+            if ((year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)) and (self.date_of_birth.month > 2):
+                number_of_years += 1
+        return number_of_years
+
+
 human = HumanAge('07-12-1999')
 # human = HumanAge('07-12-2020')
 print(human.age)
+print(human.intercal_years)
