@@ -27,9 +27,9 @@ class HumanAge:
     def intercal_years(self):
         number_of_years = 0
         for year in range(self.date_of_birth.year, self.date_now.year):
-            if ((year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)) and (self.date_of_birth.month > 2):
+            if ((year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)):
                 number_of_years += 1
-        return number_of_years
+        return f"{number_of_years} leap years have passed"
 
 
 human = HumanAge('07-12-1999')
