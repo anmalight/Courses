@@ -1,0 +1,14 @@
+    {% extends 'base.html' %}
+    {% block content %}
+        <div style="padding: 20px; background-color: green"> Index1 </div>
+
+    {% include 'add1.html' with str_str=str_str %}
+
+    {% for item in num_list %}
+        {% include 'add2.html' with num_list=num_list %}
+
+    {% endfor %}
+    {% include 'add1.html' %}
+
+
+    {% endblock %}
