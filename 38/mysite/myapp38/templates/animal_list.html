@@ -1,0 +1,7 @@
+{% include 'base_header.html' %}
+    {% for animal in animals %}
+        <div>
+            <p>Name is <a href="/myapp38/animal/{{animal.id}}/">{{ animal.name }}</a>.Type is {{ animal.get_type_display }}.</p>
+        </div>
+    {% endfor %}
+{% include 'base_footer.html' %}

@@ -1,0 +1,12 @@
+{% include 'base_header.html' %}
+
+    <div>
+        <p>Info about {{ one_animal.name }}:</p>
+        <p>Its age is {{ one_animal.age }}</p>
+        <p>Its gender is {{ one_animal.get_gender_display }}</p>
+        <p>{{ one_animal.name }} has {{ view_animal}} views at the last 10 minutes</p>
+    </div>
+
+
+<a href="/myapp38/animal/">Back to animals list</a>
+{% include 'base_footer.html' %}
